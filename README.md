@@ -1,2 +1,2 @@
 # Udacity-project2-CI-CD
-@nd project CI/CD
+2nd project CI/CD
