@@ -2,9 +2,9 @@ name: CI-CD 2nd project
 
 on:
   push:
-    branches: [master]
+    branches: [ master ]
   pull_request: 
-    branches: [master]
+    branches: [ master ]
     
 jobs:
   build:
@@ -12,5 +12,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+    
     - name: Run make command
       run: make hello
