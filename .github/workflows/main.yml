@@ -2,9 +2,9 @@ name: CI-CD 2nd project
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request: 
-    branches: [ master ]
+    branches: [master]
     
 jobs:
   build:
