@@ -15,3 +15,5 @@ jobs:
     
     - name: Run make command
       run: make hello
+    - name: Run echo command
+      run: echo "Test for setup"
