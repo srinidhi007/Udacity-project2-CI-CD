@@ -1,31 +1,24 @@
-name: CI-CD 2nd project
+name: Python application test with Github Actions
 
-on:
-  push:
-    branches: [ main ]
-  pull_request: 
-    branches: [ main ]
-    
+on: [push]
+
 jobs:
   build:
+
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v2
-
-    - name: Setup python 3.5 
+    - name: Set up Python 3.5
       uses: actions/setup-python@v1
       with:
-        python-verison: 3.5
-    
-    - name: Run make command
-      run: make hello
-
+        python-version: 3.5
     - name: Install dependencies
-      run: make install
-    
+      run: |
+        make install
     - name: Lint with pylint
-      run: make lint
-
+      run: |
+        make lint
     - name: Test with pytest
-      run: make test
+      run: |
+        make test
