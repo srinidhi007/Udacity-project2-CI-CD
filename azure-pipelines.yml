@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '6b584f81-9d75-4673-bf5c-1adec1fe2b16'
+  azureServiceConnectionId: '5d6ceeb1-e53c-492c-b0e6-999346506691'
 
   # Web app name
   webAppName: 'flask-ml-service-sri'
